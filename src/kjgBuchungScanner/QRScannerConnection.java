@@ -22,8 +22,6 @@ public class QRScannerConnection extends Thread {
 		return SerialPortList.getPortNames();
 	}
 
-	private byte[] buffer = new byte[1024];
-	private int tail = 0;
 	private ActionListener actionListener = null;
 	private SerialPort serialPort;
 	private boolean portOpen = true;

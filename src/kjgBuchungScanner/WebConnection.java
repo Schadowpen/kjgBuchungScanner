@@ -15,7 +15,6 @@ import java.security.NoSuchAlgorithmException;
 import java.time.Instant;
 
 import javax.net.ssl.HttpsURLConnection;
-import javax.xml.bind.DatatypeConverter;
 
 public class WebConnection {
 	
@@ -94,7 +93,23 @@ public class WebConnection {
 		
 		MessageDigest digest = MessageDigest.getInstance("SHA-256");
 		byte[] hash = digest.digest(plainString.getBytes(StandardCharsets.UTF_8));
-		return DatatypeConverter.printHexBinary(hash).toLowerCase();
+		return bytesToHex(hash).toLowerCase();
+	}
+	
+	/**
+	 * Converts Array of Bytes to its hexadecimal representation
+	 * @param bytes
+	 * @return Hexadecimal representation as string
+	 */
+	protected static String bytesToHex(byte[] bytes) {
+		final byte[] HEX_ARRAY = "0123456789ABCDEF".getBytes(StandardCharsets.US_ASCII);
+	    byte[] hexChars = new byte[bytes.length * 2];
+	    for (int j = 0; j < bytes.length; j++) {
+	        int v = bytes[j] & 0xFF;
+	        hexChars[j * 2] = HEX_ARRAY[v >>> 4];
+	        hexChars[j * 2 + 1] = HEX_ARRAY[v & 0x0F];
+	    }
+	    return new String(hexChars, StandardCharsets.UTF_8);
 	}
 	
 	
