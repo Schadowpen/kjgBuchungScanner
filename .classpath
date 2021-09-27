@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
@@ -10,9 +10,9 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="kjgBuchungScanner/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Philipp/Documents/eclipse Java/kjgBuchungScanner/lib/gson-2.8.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Philipp/Documents/eclipse Java/kjgBuchungScanner/lib/jssc-2.9.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Philipp/Documents/eclipse Java/kjgBuchungScanner/lib/jssc-2.9.4-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Philipp/Documents/eclipse Java/kjgBuchungScanner/lib/jssc-2.9.4-sources.jar"/>
+	<classpathentry kind="lib" path="/home/philipp/Dokumente/eclipse Java/kjgBuchungScanner/lib/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="/home/philipp/Dokumente/eclipse Java/kjgBuchungScanner/lib/jssc-2.9.4.jar"/>
+	<classpathentry kind="lib" path="/home/philipp/Dokumente/eclipse Java/kjgBuchungScanner/lib/jssc-2.9.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/philipp/Dokumente/eclipse Java/kjgBuchungScanner/lib/jssc-2.9.4-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
