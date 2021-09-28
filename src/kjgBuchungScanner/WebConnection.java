@@ -20,7 +20,7 @@ public class WebConnection {
 	
 	private static final String LOGIN_URL = "https://kjg-theater.de/login/";
 	private static final String RANDOM_PAGE_URL = "https://kjg-theater.de/login/ticketing/";
-	private static final String API_ROOT = "https://kjg-theater.de/custom-code/data/";
+	private static final String API_ROOT = "https://kjg-theater.de/custom-code/api/";
 	/**
 	 * Schluessel, der für alle API-Anfragen genutzt werden muss
 	 */
